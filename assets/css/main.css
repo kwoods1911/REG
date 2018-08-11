@@ -101,7 +101,6 @@ header{
 }
 
 .mobileContent li:hover{
-	/*border:1px solid #fff;*/
 	background-color: #f9ad0a;
 	transition: .8s;
 	cursor:pointer;
@@ -111,16 +110,66 @@ header{
 .responsive{
 	width: 100%;
 	height: auto;
+	/*height: 100%;*/
 	margin:0;
 }
 
 #mainSlider{
+	position: relative;
 	display: inline-block;
 	height:auto;
 	width:100%;
-	text-align: center;
-	/*position:relative;*/
 }
+
+.slide{
+	margin:0;
+	text-align: center;
+}
+
+.slide img{
+	margin:0;
+}
+
+.text{
+font-size: 5vw;
+position:absolute;
+margin:	auto;
+padding:8px auto;
+color:#fff;
+top:40%;
+left:0;
+right:0;
+}
+
+.text h1{
+	text-align: center;
+	margin:0 auto;
+	padding:0;
+}
+
+.prev,.next{
+font-size:30px;
+display: none;
+position: absolute;
+top:50%;
+color:#fff;
+font-weight:bold;
+padding: 30px 20px;
+border-radius: 0 3px 3px 0;
+		}
+		.next{
+			border-radius:3px 0 0 3px;
+			right:0;
+		}
+
+
+		.prev:hover,.next:hover{
+			background:rgba(0,0,0,0.8);
+			cursor:pointer;
+		}
+		.prev{
+			left:0;
+		}
 
 .showcaseHeader{
 	/*position:absolute;*/
@@ -148,7 +197,7 @@ header{
 .sectionHeader{
 	background-color: #202020;
 	margin:0;
-	padding:40px 0;
+	padding:10px 0;
 	text-align: center;
 }
 
@@ -161,7 +210,7 @@ header{
 
 .container{
 	margin:0 auto;
-	width:98%;
+	width:90%;
 }
 
 .infoContainer{
@@ -185,11 +234,14 @@ header{
 
 
 .infoContent{
-	background-color: #f9ad0a;
+	/*background-color: #f9ad0a;*/
+	color:#333;
 	padding: 20px 10px;
-	margin-bottom:5px;
+	/*margin-bottom:5px;*/
 	border-top:2px solid #333;
 }
+
+
 
 
 .infoWrapper{
@@ -212,6 +264,10 @@ header{
 
 
 /*ABOUT USE SECTION*/
+#aboutUs .sectionHeader{
+	margin-top:10px;
+}
+
 .teamImg{
 	height:auto;
 	width:100%;
@@ -219,7 +275,8 @@ header{
 
 
 .teamImg img{
-	padding:30px 0;
+	padding-top:10px;
+	padding-bottom: 30px;
 	height: auto;
 	width:100%;
 	vertical-align: middle;
@@ -317,8 +374,15 @@ header{
 }
 
 .employeeCard:hover{
-	border-bottom: 1px solid #f9ad0a;
-	transition:.6s;
+	cursor: pointer;
+}
+
+.employeeFocus{
+	/*border: 1.5px solid #f9ad0a;*/
+	border: 1.5px solid rgba(249,173,10,0);
+
+	/*rbg(249,173,10,0.5)*/
+
 }
 
 .employeePhoto1{
@@ -364,12 +428,41 @@ header{
 	background-position: center;
 }
 
+.employeePhoto4{
+	margin:0 auto;
+	padding:30px 0;
+	background-color: blue;
+	width:100px;
+	height:50px;
+	border-radius: 70%;
+	border:1px solid black;
+	background-image: url('images/employee_4.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.employeePhoto5{
+	margin:0 auto;
+	padding:30px 0;
+	background-color: blue;
+	width:100px;
+	height:50px;
+	border-radius: 70%;
+	border:1px solid black;
+	background-image: url('images/employee_5.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 .employeeBio h2{
 	margin:0;
 }
 
 .employeeBio p{
-	padding:10px 0;
+	padding:10px 10px;
 }
 
 
@@ -445,6 +538,7 @@ footer{
 	background-color: #2e2e2e;
 	color:#f9ad0a;
 	padding:20px 5px;
+	text-align: center;
 }
 
 
@@ -468,10 +562,13 @@ footer{
 
 }
 
-
+/*Tablet*/
 @media(min-width: 768px){
 
 
+	.prev,.next{
+	display: block;
+}
 	.icon{
 		padding:20px 0;
 	}
@@ -508,6 +605,7 @@ footer{
 .employeeContainer li{
 	display: inline-block;
 	min-width: 200px;
+	max-width: 200px;
 }
 
 }
@@ -542,6 +640,11 @@ footer{
 		margin:0;
 	}
 
+	.desktopNavContent li a{
+		color:#fff;
+		text-decoration: none;
+	}
+
 
 	.menuIcon{
 		display: none;
@@ -556,7 +659,7 @@ footer{
 @media(min-width: 1024px){
 	.infoGrid{
 	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	grid-template-columns: 1fr 1fr 1fr; 
 	grid-column-gap: 20px;
 }
 

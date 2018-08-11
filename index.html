@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<script type="text/javascript" src="assets/JS/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/JS/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -54,10 +55,10 @@
 		<nav class="desktopNav">
 			<ul class="desktopNavContent">
 				<!-- Displayed on desktops and larger screens -->
-				<li>Home</li>
-				<li>Projects</li>
-				<li>About</li>
-				<li>Contact</li>
+				<li><a href="#">Home</a></li>
+				<li> <a href="#mainServices">Services</a></li>
+				<li> <a href="#aboutUs">About</a></li>
+				<li> <a href="#contactInfo">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -69,8 +70,9 @@
 		<!-- Displayed on mobile and tablets -->
 			<ul>
 				<li>Home</li>
-				<li>About</li>
 				<li>Services</li>
+				<li>About</li>
+				<li>Contact</li>
 			</ul>
 		</nav>
 
@@ -81,16 +83,35 @@
 				<h1>Robust Engineering Group</h1>
 				<h3>Leader in Engineering Since 1988.</h3>
 			</div> -->
+<div class="slide">
+	<img src="assets/css/images/11.jpeg" class="responsive  slide1">
+	<div class="text">
+		<h1>Innovation</h1>
+		<p> Content</p>
+	</div>
+</div>	
 
-			<div>
-				<img src="assets/css/images/slide_1.jpeg" class="responsive">
-			</div>
+<div class="slide">
+	<img src="assets/css/images/22.jpeg" class="responsive  slide1">
+	<div class="text"><h1>Determination</h1></div>
+</div>
+
+<div class="slide">
+	<img src="assets/css/images/33.jpeg" class="responsive  slide1">
+	<div class="text"> 
+		<h1>Progression</h1>
+	</div>
+</div>	
+		<!-- SlideShow Buttons -->
+		<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+		<a class="next" onclick="plusIndex(+1)">&#10095;</a>	
 			
 		</section>
 		<section id="mainServices">
-			<div class="sectionHeader"><h1>Services</h1>
-			</div>
+			
 			<div class="container">
+				<div class="sectionHeader"><h1>Services</h1>
+			</div>
 
 				<div class="infoGrid">
 
@@ -158,6 +179,37 @@
 					</div>
 				</div>
 
+
+				<div class="infoContainer">
+					
+					<!-- infoImg class controls image parameters -->
+					<div class=infoImg>
+						<img src="assets/css/images/services_5.jpeg">
+					</div>
+					
+					<div class="infoContent">
+						<h1>Electrical</h1>
+						<h3>Design and Drafting</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+
+
+
+				<div class="infoContainer">
+					
+					<!-- infoImg class controls image parameters -->
+					<div class=infoImg>
+						<img src="assets/css/images/services_6.jpeg">
+					</div>
+					
+					<div class="infoContent">
+						<h1>Fire Alarm</h1>
+						<h3>Design and Drafting</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+
 					
 				</div>
 				
@@ -170,12 +222,13 @@
 
 
 		<section id="aboutUs">
-			<div class="sectionHeader">
-				<h1>The Team</h1>
-			</div>
+			
 
 
 			<div class="container">
+				<div class="sectionHeader">
+				<h1>The Team</h1>
+			</div>
 				
 
 			<div class="teamWrapper">
@@ -209,28 +262,33 @@
 
 					<ul class="employeeContainer">
 						<li>
-							<div class="employeeCard">
+							<div class="employeeCard employeeFocus">
 								<div class="employeePhoto1">
 									<!-- Background Photo used -->
 								</div>
 							<div class="employeeBio">
 								<h3>Howard Roark</h3>
 								<h2>Owner</h2>
-								<p>Lorem Ipsum </p>
+								<p>Lorem Ipsum dolor sit amet, consectetur dolor sit amet, consectetur
+									dolor sit amet, consectetur
+									dolor sit amet, consectetur
+								</p>
 							</div>
 						</div>
 					</li>
 
 
 					<li>
-							<div class="employeeCard">
+							<div class="employeeCard employeeFocus">
 								<div class="employeePhoto2">
 									<!-- Background photo used -->
 								</div>
 							<div class="employeeBio">
-								<h3>Roger Rees</h3>
+								<h3>Roger Reese</h3>
 								<h2>Draftsman</h2>
-								<p>Lorem Ipsum</p>
+								<p>Lorem Ipsum dolor sit amet, consectetur dolor sit amet, consectetur
+									dolor sit amet, consectetur
+									dolor sit amet, consectetur</p>
 							</div>
 						</div>
 					</li>
@@ -240,14 +298,47 @@
 
 
 					<li>
-							<div class="employeeCard">
+							<div class="employeeCard employeeFocus">
 								<div class="employeePhoto3">
 									<!-- Background photo used -->
 								</div>
 							<div class="employeeBio">
 								<h3>Sally Sue</h3>
-								<h2>Juniro Engineer</h2>
-								<p>Lorem Ipsum</p>
+								<h2>Asst. Engineer</h2>
+								<p>Lorem Ipsum dolor sit amet, consectetur dolor sit amet, consectetur
+									dolor sit amet, consectetur
+									dolor sit amet, consectetur</p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+							<div class="employeeCard employeeFocus">
+								<div class="employeePhoto4">
+									<!-- Background photo used -->
+								</div>
+							<div class="employeeBio">
+								<h3>Bruce Banner</h3>
+								<h2>Asst. Engineer</h2>
+								<p>Lorem Ipsum dolor sit amet, consectetur dolor sit amet, consectetur
+									dolor sit amet, consectetur
+									dolor sit amet, consectetur</p>
+							</div>
+						</div>
+					</li>
+
+
+					<li>
+							<div class="employeeCard employeeFocus">
+								<div class="employeePhoto5">
+									<!-- Background photo used -->
+								</div>
+							<div class="employeeBio">
+								<h3>Tony Stark</h3>
+								<h2>Asst. Engineer</h2>
+								<p>Lorem Ipsum dolor sit amet, consectetur dolor sit amet, consectetur
+									dolor sit amet, consectetur
+									dolor sit amet, consectetur</p>
 							</div>
 						</div>
 					</li>
