@@ -378,11 +378,7 @@ border-radius: 0 3px 3px 0;
 }
 
 .employeeFocus{
-	/*border: 1.5px solid #f9ad0a;*/
-	border: 1.5px solid rgba(249,173,10,0);
-
-	/*rbg(249,173,10,0.5)*/
-
+	border: 2.5px solid rgba(249,173,10,0);
 }
 
 .employeePhoto1{
