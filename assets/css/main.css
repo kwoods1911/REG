@@ -41,6 +41,11 @@ header{
 .headerIcons li{
 	list-style: none;
 }
+
+.headerIcons li a{
+	text-decoration: none;
+}
+
 .navBar{
 	background-color: #f9ad0a;
 	width: 100%;
@@ -159,7 +164,7 @@ border-radius: 0 3px 3px 0;
 		}
 		.next{
 			border-radius:3px 0 0 3px;
-			right:0;
+			right:5%;
 		}
 
 
@@ -168,7 +173,7 @@ border-radius: 0 3px 3px 0;
 			cursor:pointer;
 		}
 		.prev{
-			left:0;
+			left:5%;
 		}
 
 .showcaseHeader{
@@ -657,6 +662,7 @@ footer{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr; 
 	grid-column-gap: 20px;
+	grid-auto-rows: auto;
 }
 
 
@@ -674,6 +680,15 @@ footer{
 .contactGrid{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+}
+
+
+@media(min-width: 2560px){
+	.infoImg img{
+	min-height:auto;
+	height: 700px;
 }
 
 }
