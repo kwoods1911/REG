@@ -4,7 +4,9 @@ whitish color - #fff;
 blackish color -#202020
 */
 
-
+img{
+	vertical-align: middle;
+}
 
 body{
 	/*text-align: center;*/
@@ -280,7 +282,6 @@ border-radius: 0 3px 3px 0;
 
 
 .teamImg img{
-	padding-top:10px;
 	padding-bottom: 30px;
 	height: auto;
 	width:100%;
