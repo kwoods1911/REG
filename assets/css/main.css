@@ -12,7 +12,9 @@ body{
 	/*text-align: center;*/
 	margin:0;
 	background-color:#fff;
-	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:16px;
+
 }
 
 header{
@@ -211,7 +213,7 @@ border-radius: 0 3px 3px 0;
 .sectionHeader h1{
 	color:#fff;
 	margin:0;
-	font-size: 3em;
+	font-size: 2em;
 
 }
 
@@ -395,7 +397,7 @@ border-radius: 0 3px 3px 0;
 	height:50px;
 	border-radius: 70%;
 	border:1px solid black;
-	background-image: url('images/employee_1.jpeg');
+	background-image: url('images/employee_6.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -405,12 +407,11 @@ border-radius: 0 3px 3px 0;
 .employeePhoto2{
 	margin:0 auto;
 	padding:30px 0;
-	background-color: blue;
 	width:100px;
 	height:50px;
 	border-radius: 70%;
 	border:1px solid black;
-	background-image: url('images/employee_2.jpg');
+	background-image: url('images/employee_3.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -419,12 +420,11 @@ border-radius: 0 3px 3px 0;
 .employeePhoto3{
 	margin:0 auto;
 	padding:30px 0;
-	background-color: blue;
 	width:100px;
 	height:50px;
 	border-radius: 70%;
 	border:1px solid black;
-	background-image: url('images/employee_3.jpeg');
+	background-image: url('images/employee_2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -448,7 +448,6 @@ border-radius: 0 3px 3px 0;
 .employeePhoto5{
 	margin:0 auto;
 	padding:30px 0;
-	background-color: blue;
 	width:100px;
 	height:50px;
 	border-radius: 70%;
@@ -465,6 +464,7 @@ border-radius: 0 3px 3px 0;
 
 .employeeBio p{
 	padding:10px 10px;
+	text-align: left;
 }
 
 
@@ -510,7 +510,6 @@ border-radius: 0 3px 3px 0;
 
 
 /*Contact Section*/
-
 #contactInfo{
 	padding:20px 0;
 	height:auto;
@@ -518,24 +517,15 @@ border-radius: 0 3px 3px 0;
 	background-color: #202020;
 	color:#fff;
 }
-
-
 .contactContent{
 	padding: 20px 15px;
 	margin: 5px 5px;
 	border:2px solid grey;
-	text-align: center;
+	text-align: left;
 }
-
 .contactContent h5{
-	text-align: center;
+	padding:8px 0;
 }
-
-
-
-
-
-
 footer{
 	background-color: #2e2e2e;
 	color:#f9ad0a;
@@ -628,7 +618,7 @@ footer{
 	.desktopNav li{
 		display:inline;
 		color:#fff;
-		padding:15px 30px;
+		padding:15px 64px;
 	}
 
 	.desktopNav li:hover{
